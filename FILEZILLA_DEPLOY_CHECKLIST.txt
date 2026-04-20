@@ -1,0 +1,33 @@
+FILEZILLA DEPLOY CHECKLIST
+
+1) Get hosting details from your provider panel:
+- Host:
+- Username:
+- Password:
+- Port: 21 (FTP) or 22 (SFTP recommended)
+
+2) Open FileZilla Site Manager:
+- Protocol: FTP or SFTP
+- Host: (from provider)
+- Port: (from provider)
+- Logon Type: Normal
+- User: (from provider)
+- Password: (from provider)
+
+3) Connect and open remote web root folder:
+- Usually one of these folders:
+  public_html
+  htdocs
+  www
+
+4) Upload website files:
+- Upload ALL contents from local build folder
+- Or upload and extract filezilla-upload.zip on server (if hosting supports unzip)
+
+5) Verify site:
+- Open your domain
+- Hard refresh with Ctrl+F5
+
+Notes:
+- React routing fallback is already prepared with public/.htaccess and included in build.
+- If your host uses Nginx (not Apache), ask for equivalent rewrite rule.
