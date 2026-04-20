@@ -16,10 +16,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav className="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 gap-2">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Marita YIM</h1>
+          <div className="flex items-center min-w-0">
+            <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400 truncate">
+              Marita YIM
+            </h1>
           </div>
 
           {/* Desktop Menu */}
@@ -36,7 +38,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </div>
 
           {/* Dark Mode Toggle & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4 shrink-0">
             {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
@@ -54,6 +56,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+              aria-label="Toggle menu"
             >
               <i className="fas fa-bars"></i>
             </button>
@@ -62,7 +65,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden pb-4 space-y-3 border-t dark:border-gray-700">
+          <div className="md:hidden pb-4 space-y-3 border-t dark:border-gray-700 max-h-[70vh] overflow-y-auto">
             {navItems.map((item) => (
               <a
                 key={item.name}

@@ -18,6 +18,11 @@ body {
   color: #333;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Dark mode styles */
 body.dark {
   @apply bg-gray-900 text-gray-100;
@@ -100,6 +105,14 @@ body.dark {
   animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
 }
 
+@media (max-width: 767px) {
+  .typing-text {
+    white-space: normal;
+    border-right: 0;
+    animation: none;
+  }
+}
+
 .float {
   animation: float 3s ease-in-out infinite;
 }
@@ -133,7 +146,7 @@ body.dark {
 
 /* Section padding */
 .section {
-  @apply py-20 px-4 md:px-8 lg:px-16;
+  @apply py-14 px-4 sm:px-6 md:py-20 md:px-8 lg:px-16;
 }
 
 /* Container */

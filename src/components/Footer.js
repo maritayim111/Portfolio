@@ -81,13 +81,13 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Copyright */}
-          <p className="text-gray-500 text-center md:text-left">
+          <p className="text-gray-500 text-center md:text-left leading-relaxed break-words">
             &copy; {currentYear} Marita YIM. All rights reserved. | 
             <span className="ml-2">Designed with <i className="fas fa-heart text-red-500"></i> using React & Tailwind CSS</span>
           </p>
 
           {/* Social Links */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap justify-center md:justify-end">
             {socialLinks.map((social, index) => (
               <a
                 key={index}

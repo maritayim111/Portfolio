@@ -60,25 +60,25 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20 flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-12 md:py-20 flex flex-col md:flex-row items-center gap-10 md:gap-12">
         {/* Left Content */}
-        <div className="flex-1 slide-in-left">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+        <div className="flex-1 slide-in-left w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
             Hello, I'm Marita YIM
           </h1>
           
-          <div className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6 h-16 flex items-center">
+          <div className="text-xl sm:text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6 min-h-[3.5rem] md:h-16 flex items-center">
             <span className="typing-text">{displayText}</span>
           </div>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl">
+          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl">
             I'm a third-year student in Management Information Systems at SETEC Institute. 
             Passionate about creating content, managing social platforms, and building 
             marketing campaigns that increase awareness, engagement, and conversions.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex gap-3 sm:gap-4 flex-wrap">
             <a
               href="#projects"
               className="btn btn-primary"
@@ -96,7 +96,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-6 mt-8">
+          <div className="flex gap-4 sm:gap-6 mt-8 flex-wrap">
             <a
               href="https://www.facebook.com/marita.yim.1"
               target="_blank"
@@ -141,8 +141,8 @@ const Hero = () => {
         </div>
 
         {/* Right Content - Profile Image */}
-        <div className="flex-1 slide-in-right flex justify-center">
-          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 dark:from-blue-500 dark:to-indigo-700 p-2 shadow-2xl float overflow-hidden">
+        <div className="flex-1 slide-in-right flex justify-center w-full">
+          <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 dark:from-blue-500 dark:to-indigo-700 p-2 shadow-2xl float overflow-hidden">
             <img 
               src="/img/profile.jpg" 
               alt="Marita YIM - Profile" 

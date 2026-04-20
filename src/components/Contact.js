@@ -175,7 +175,7 @@ const Contact = () => {
               <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-6">
                 Follow Me
               </h4>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -192,8 +192,8 @@ const Contact = () => {
             </div>
 
             {/* Quick Response Info */}
-            <div className="card mt-8 bg-blue-50 dark:bg-blue-900 border-l-4 border-l-blue-600">
-              <i className="fas fa-info-circle text-blue-600 dark:text-blue-400 text-xl mr-3"></i>
+            <div className="card mt-8 bg-blue-50 dark:bg-blue-900 border-l-4 border-l-blue-600 flex items-start gap-3">
+              <i className="fas fa-info-circle text-blue-600 dark:text-blue-400 text-xl mt-1"></i>
               <p className="text-blue-800 dark:text-blue-200">
                 I'm always happy to hear from you. I'll try to respond to your message within 24 hours.
               </p>
