@@ -36,8 +36,7 @@ const About = () => {
             </h3>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I am a third-year student in Management Information Systems at SETEC Institute, 
-              focused on digital marketing, content creation, and social media growth.
+              I am a third-year, second-semester student in Management Information Systems at SETEC Institute, focused on digital marketing, content creation, and social media growth.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
